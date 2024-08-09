@@ -47,7 +47,7 @@ CCFLAGS := $(filter-out $(CC_WARNINGS),$(CCFLAGS))
 
 # Tests loading and running a speech model.
 $(eval $(call microlite_test,micro_speech_test,\
-$(MICRO_SPEECH_TEST_SRCS),$(MICRO_SPEECH_TEST_HDRS),$(MICRO_SPEECH_GENERATOR_INPUTS)))
+ $(MICRO_SPEECH_TEST_SRCS),$(MICRO_SPEECH_TEST_HDRS),$(MICRO_SPEECH_GENERATOR_INPUTS)))
 
 # Builds a standalone binary.
 $(eval $(call microlite_test,micro_speech,\

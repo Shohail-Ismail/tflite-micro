@@ -18,7 +18,7 @@ ifneq (3.82,$(firstword $(sort $(MAKE_VERSION) 3.82)))
 endif
 
 # root directory of tensorflow
-TENSORFLOW_ROOT :=
+TENSORFLOW_ROOT := /mnt/c/Users/shoha/tflite-micro/
 RELATIVE_MAKEFILE_DIR := tensorflow/lite/micro/tools/make
 MAKEFILE_DIR := $(TENSORFLOW_ROOT)$(RELATIVE_MAKEFILE_DIR)
 
@@ -97,6 +97,7 @@ INCLUDES := \
 -I$(DOWNLOADS_DIR)/flatbuffers/include \
 -I$(DOWNLOADS_DIR)/kissfft \
 -I$(DOWNLOADS_DIR)/ruy
+
 
 ifneq ($(TENSORFLOW_ROOT),)
   INCLUDES += -I$(TENSORFLOW_ROOT)

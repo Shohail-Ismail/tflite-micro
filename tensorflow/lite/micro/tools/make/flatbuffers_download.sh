@@ -52,6 +52,10 @@ function delete_build_files() {
 DOWNLOADED_FLATBUFFERS_PATH=${DOWNLOADS_DIR}/flatbuffers
 
 if [ -d ${DOWNLOADED_FLATBUFFERS_PATH} ]; then
+  #echo -e "****************\n"
+  #pwd
+  #echo -e "****************\n"
+  #apply_patch_to_folder ./tensorflow/lite/micro//tools/make/downloads/flatbuffers/include/flatbuffers flatbuffers.patch "TFLM patch"
   echo >&2 "${DOWNLOADED_FLATBUFFERS_PATH} already exists, skipping the download."
 else
   ZIP_PREFIX="v23.5.26"
